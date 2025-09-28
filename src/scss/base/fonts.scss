@@ -1,0 +1,54 @@
+/* BeVietnam */
+@font-face {
+  font-family: 'BeVietnam', sans-serif;
+  src:
+    url('/assets/fonts/BeVietnam-Medium.woff2') format('woff2'),
+    url('/assets/fonts/BeVietnam-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Plus Jakarta Sans Regular */
+@font-face {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  src:
+    url('/assets/fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
+    url('/assets/fonts/PlusJakartaSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Plus Jakarta Sans SemiBold */
+@font-face {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  src:
+    url('/assets/fonts/PlusJakartaSans-SemiBold.woff2') format('woff2'),
+    url('/assets/fonts/PlusJakartaSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Plus Jakarta Sans Bold */
+@font-face {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  src:
+    url('/assets/fonts/PlusJakartaSans-Bold.woff2') format('woff2'),
+    url('/assets/fonts/PlusJakartaSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Plus Jakarta Sans ExtraBold */
+@font-face {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  src:
+    url('/assets/fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+    url('/assets/fonts/PlusJakartaSans-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

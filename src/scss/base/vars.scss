@@ -1,0 +1,33 @@
+$font-family-base: 'Plus Jakarta Sans', sans-serif;
+$font-family-second: 'BeVietnam', sans-serif;
+$font-weight-base: 400;
+$font-size-base: 18px;
+
+// colors
+$black: #000;
+$white: #fff;
+$blue-light: #14b3f5;
+$gray-light: #9ea3b5;
+$blue-dark-1: #142257;
+$black-soft: #171a21;
+$gray-mid: #545970;
+$blue-dark-2: #1f3685;
+$gray-bg: #e3e6f0;
+$orange: #ffa829;
+
+
+
+
+
+// Минимальная ширина страницы
+$min-midth: 375px;
+
+// Ширина макета (полотно в Figma)
+$max-width: 1920px;
+
+// Основной контейнер (контентная область)
+$container-width: 1490px;
+
+// Общий отступ у контейнера
+// (300= по 150px слева и справа, 0 = нет отступа)
+$container-padding: 150;
