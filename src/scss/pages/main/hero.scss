@@ -162,13 +162,13 @@
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      background: $white;
+      background: $white url('/public/assets/images/icons/phone.svg') no-repeat center;
+      background-size: 24px 24px; // ← десктоп
 
-      &::before {
-        content: url('/public/assets/images/icons/phone.svg');
-        display: inline-block;
-        width: 24px;
-        height: 24px;
+      @media (width <= 576px) {
+        width: 32px;
+        height: 32px;
+        background-size: 16px 16px; // ← мобилка
       }
     }
 
@@ -239,15 +239,7 @@
         line-height: 24px;
       }
 
-      .hero__btn-icon {
-        width: 32px;
-        height: 32px;
-
-        &::before {
-          width: 16px;
-          height: 16px;
-        }
-      }
+      
     }
 
     @media (width <= 425px) {

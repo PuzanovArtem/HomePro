@@ -1,0 +1,213 @@
+.banner {
+  @extend %position-rel;
+  overflow: hidden;
+  margin: 64px 0 0;
+  color: $white;
+  background: $blue-dark-1;
+  clip-path: polygon(14% 5%, 39% 5%, 41% 0, 100% 0, 100% 100%, 0 100%, 0 0, 12% 0);
+
+  &__image {
+    @extend %position-rel;
+    z-index: 1;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &--desktop {
+      @extend %position-abs;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 966px;
+      height: 655px;
+      background: url('/public/assets/images/desktop.png') no-repeat right bottom;
+      background-size: contain;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__container {
+    @extend %position-rel;
+    z-index: 2;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 165px 20px 106px;
+  }
+
+  &__content {
+    max-width: 660px;
+    text-align: left;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 76px;
+    font-weight: 700;
+
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+  &__note {
+    display: flex;
+    gap: 40px;
+    margin: 0 0 30px -8px;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: $blue-light;
+    word-spacing: 1px;
+  }
+
+  &__note-item {
+    @extend %display-flex;
+    gap: 8px;
+  }
+
+  &__note-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__btn {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    gap: 16px;
+    padding: 8px 10px 8px 25px;
+    border-radius: 50px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+    word-spacing: -2px;
+    background: $blue-light;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+  }
+
+  &__btn:hover {
+    background: #0891b2;
+  }
+
+  &__btn-icon {
+    @extend %display-center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: $white url('/public/assets/images/icons/phone.svg') no-repeat center;
+    background-size: 24px 24px;
+  }
+}
+
+@media (width <= 768px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    margin: -30px 0;
+    clip-path: polygon(25.5% 3.4%, 75% 3.4%, 82.2% 0, 100% 0, 100% 100%, 0 100%, 0 0, 18% 0);
+
+    &__title {
+      margin: 39px auto 0;
+      font-size: 48px;
+      line-height: 52px;
+      font-weight: 700;
+      text-align: center;
+
+      span {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .banner__image--desktop {
+    display: none;
+  }
+
+  .banner__image--mobile {
+    order: 3;
+    display: block;
+    width: 100%;
+    height: 323px;
+    margin-top: 20px;
+    background: url('/public/assets/images/mobile.png') no-repeat;
+  }
+
+  .banner__container {
+    order: 1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .banner__content {
+    max-width: 100%;
+  }
+
+  .banner__note {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 16px;
+    margin: 21px 0 24px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    font-weight: 400;
+  }
+
+  .banner__note-icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+  }
+
+  .banner__btn {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 11px;
+    width: 175px;
+    margin: 0 auto;
+    padding: 8px 0 8px 19px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    font-weight: 700;
+  }
+
+  .banner__btn-icon {
+    @extend %display-center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $white url('/public/assets/images/icons/phone.svg') no-repeat center;
+    background-size: 16px 16px;
+  }
+}
+
+@media (width<= 425px) {
+  .banner {
+    &__title {
+      width: 269px;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      font-weight: 700;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}
