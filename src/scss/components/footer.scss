@@ -164,12 +164,23 @@
 
   &__bottom {
     opacity: 0.9;
+    position: relative;
     margin-top: 95px;
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
     text-align: center;
     word-spacing: 1px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -32px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.3);
+    }
   }
 
   @media (width <= 1224px) {
@@ -314,8 +325,16 @@
     }
 
     &__bottom {
-      margin-top: 43px;
+      margin-top: 35px;
       word-spacing: 1px;
+
+      &::before {
+        top: -17px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $white;
+      }
     }
   }
 }
