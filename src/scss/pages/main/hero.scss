@@ -163,12 +163,12 @@
       height: 48px;
       border-radius: 50%;
       background: $white url('/public/assets/images/icons/phone.svg') no-repeat center;
-      background-size: 24px 24px; // ← десктоп
+      background-size: 24px 24px;
 
       @media (width <= 576px) {
         width: 32px;
         height: 32px;
-        background-size: 16px 16px; // ← мобилка
+        background-size: 16px 16px;
       }
     }
 
@@ -238,8 +238,6 @@
         font-size: 18px;
         line-height: 24px;
       }
-
-      
     }
 
     @media (width <= 425px) {

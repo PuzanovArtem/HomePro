@@ -5,3 +5,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeader()
   initSlider('.slider')
 })
+

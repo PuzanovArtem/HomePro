@@ -1,0 +1,321 @@
+.footer {
+  padding: 36px 18px 31px;
+  color: $white;
+  background: $blue-light;
+
+  &__container {
+    max-width: 1490px;
+    margin: 0 auto;
+  }
+
+  &__newsletter {
+    margin: 9px 0 32px;
+    padding: 1.5rem;
+    border-radius: 24px;
+    background: #4ac9ff;
+  }
+
+  &__newsletter-content {
+    @extend %display-jc-sb;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__newsletter-texts {
+    max-width: 60%;
+  }
+
+  &__newsletter-title {
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  &__newsletter-text {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    word-spacing: 2.5px;
+  }
+
+  &__newsletter-form {
+    @extend %display-jc-sb;
+    width: 516px;
+    height: 76px;
+    margin: -4px -4px 0 0;
+    padding: 12px 12px 12px 22px;
+    border-radius: 50px;
+    background: $white;
+  }
+
+  &__newsletter-form--mobile {
+    display: none;
+  }
+
+  &__newsletter-input {
+    flex: 1;
+    padding: 11px 15px 11px 8px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  &__newsletter-btn {
+    cursor: pointer;
+    padding: 14px 37px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $white;
+    background: $blue-light;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #08c;
+    }
+  }
+
+  &__content {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 52px;
+  }
+
+  &__brand {
+    flex: 1;
+    max-width: 460px;
+    margin: 0 0 0 23px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+
+    &-img {
+      width: 222px;
+      height: 46px;
+    }
+  }
+
+  &__brand-text {
+    margin-bottom: 33px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    word-spacing: 2.5px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 24px;
+    margin-left: 2px;
+  }
+
+  &__social-icon {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 105px;
+    margin-right: 33px;
+  }
+
+  &__column-title {
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  &__list {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    word-spacing: 2px;
+  }
+
+  &__list-item {
+    margin-bottom: 11px;
+  }
+
+  &__link {
+    font-size: 0.9rem;
+    color: $white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__bottom {
+    opacity: 0.9;
+    margin-top: 95px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    word-spacing: 1px;
+  }
+
+  @media (width <= 1224px) {
+    &__newsletter-content {
+      justify-content: start;
+    }
+  }
+
+  @media (width <= 768px) {
+    &__newsletter-content {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      text-align: left;
+    }
+
+    &__newsletter-texts {
+      max-width: 100%;
+    }
+
+    &__newsletter-form--desktop {
+      display: none;
+    }
+
+    &__newsletter-form--mobile {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  @media (width <= 638px) {
+    &__content {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    &__brand {
+      max-width: 100%;
+      margin: 0;
+      text-align: left;
+    }
+
+    &__logo {
+      justify-content: flex-start;
+      display: flex;
+    }
+
+    &__socials {
+      justify-content: flex-start;
+      margin: 20px 0 0;
+    }
+
+    &__links {
+      align-items: flex-start;
+      gap: 32px;
+      margin: 0;
+    }
+
+    &__list {
+      text-align: left;
+    }
+  }
+
+  @media (width <= 568px) {
+    &__newsletter-form--mobile {
+      width: 100%;
+      height: 56px;
+      margin: 5px 0 0 -2px;
+      padding: 12px 8px 12px 4px;
+    }
+
+    &__newsletter-input {
+      width: 149px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__newsletter-btn {
+      width: 112px;
+      height: 40px;
+      padding: 10px 16px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  @media (width <= 425px) {
+    padding: 36px 18px 15px;
+
+    &__newsletter {
+      margin: 26px 7px 0;
+      padding: 23px 22px;
+    }
+
+    &__newsletter-text {
+      word-spacing: 3.5px;
+    }
+
+    &__newsletter-form--mobile {
+      width: 285px;
+      height: 56px;
+      margin: 5px 0 0 -2px;
+      padding: 12px 8px 12px 4px;
+    }
+
+    &__newsletter-input {
+      width: 149px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__newsletter-btn {
+      width: 112px;
+      height: 40px;
+      padding: 10px 16px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__content {
+      gap: 33px;
+      margin: 28px 0 0 3px;
+      margin-top: 28px;
+    }
+
+    &__brand-text {
+      max-width: 299px;
+      margin-bottom: 33px;
+      word-spacing: 2.5px;
+    }
+
+    &__socials {
+      margin: 20px 0 0 3px;
+    }
+
+    &__links {
+      gap: 67px;
+      margin: 0 0 0 5px;
+    }
+
+    &__bottom {
+      margin-top: 43px;
+      word-spacing: 1px;
+    }
+  }
+}
